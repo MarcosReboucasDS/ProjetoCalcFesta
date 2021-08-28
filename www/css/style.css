@@ -1,2 +1,27 @@
-/**/
+.display {
+  margin-top: 5px;
+  height: 80px;
+  font-size: 60px;
+  text-align: right;
+}
+#display{
+  font-size: 30px;
+}
+
+.linha{
+  margin-top: 5px;
+}
+
+.linha button{
+  font-size: 25px;
+  height: 40px;
+  width: 70px;
+}
+#titulo{
+  font-size: 30px;
+  text-align: center;
+}
+#numeros{
+  max-width: 10px;
+}
 

@@ -4,26 +4,119 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
-
-  <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <script src="components/loader.js"></script>  
+  <script src="components/calc.js"></script>
   <link rel="stylesheet" href="css/style.css">
-
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
+   <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-  This is a template for Onsen UI app.
+  <h1 id="titulo">Quantidade de Pessoas</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <input type="text" class="form-control display" readonly id="display">
+        </div>
+      </div>
+    </div>
+      <!-- Containers resuld -->
+  <div class="container">
+    <div class="row linha">
+      <p>Refrigerante</p>
+      <div class="col-6">
+        <div class="form-group">
+          <input type="text" class="form-control display" readonly id="prefri">
+        </div>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row linha">
+      <p>Água</p>
+      <div class="col-6">
+        <div class="form-group">
+          <input type="text" class="form-control display" readonly id="pagua">
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+      <p>Bolo</p>
+      <div class="col-6">
+        <div class="form-group">
+          <input type="text" class="form-control display" readonly id="pbolo">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row linha">
+      <p>Doces</p>
+      <div class="col-6">
+        <div class="form-group">
+          <input type="text" class="form-control display" readonly id="pdoce">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <p>Salgadinhos</p>
+      <div class="col-6">
+        <div class="form-group">
+          <input type="text" class="form-control display" readonly id="psalg">
+        </div>
+      </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row linha">
+        <div class="offset-6 col-6">
+          <button class="btn btn-danger btn-block" id="apagar">CE</button>
+      </div>
+    </div>
+    <div class="row linha">
+      <div class="col-3">
+          <button class="btn btn-primary btn-block numerico" value="1">1</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary btn-block numerico" value="2">2</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary btn-block numerico" value="3">3</button>
+      </div>
+    </div>
+
+    <div class="row linha">
+      <div class="col-3">
+          <button class="btn btn-primary btn-block numerico" value="4">4</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary btn-block numerico" value="5">5</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary btn-block numerico" value="6">6</button>
+      </div>
+    </div>
+
+    <div class="row linha">
+      <div class="col-3">
+          <button class="btn btn-primary btn-block numerico" value="7">7</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary btn-block numerico" value="8">8</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary btn-block numerico" value="9">9</button>
+      </div>
+    </div>
+    <div class="row linha">
+      <div class="col-3">
+          <button class="btn btn-primary btn-block numerico" value="0">0</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-success btn-block" id="igual">=</button>
+      </div>
+    </div>
 </body>
 </html>
